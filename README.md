@@ -120,3 +120,9 @@ var app7 = new Vue({
 })
 ```
 This is just a taste of what Vue can do for you :)
+
+### Resources
+  * https://vuejs.org/
+  * https://css-tricks.com/intro-to-vue-1-rendering-directives-events/
+  * https://github.com/vuejs/vue-devtools
+  * https://scotch.io/tutorials/build-an-app-with-vue-js-a-lightweight-alternative-to-angularjs
