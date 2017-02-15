@@ -9,9 +9,9 @@ A lot, depending on your use case.
 [Vue](https://vuejs.org/) is a progressive framework for building user interfaces. Think React and Angular had a baby, then Polymer came in to raise it. The core library is focused on the view layer, and is considered a MVVM, [Model View View Model](https://www.codeproject.com/Articles/100175/Model-View-ViewModel-MVVM-Explained), similiar to React, but Vue has two way data-binding like Angular.
 
 
-    >A virtual DOM with reactive components that offer the View layer only, props and a Redux-like store similar to React.
-    >Conditional rendering, and services, similar to Angular.
-    >Inspired by Polymer in part in terms of simplicity and performance, Vue offers a similar development style as HTML, styles, and JavaScript are composed in tandem.
+  >A virtual DOM with reactive components that offer the View layer only, props and a Redux-like store similar to React.
+  >Conditional rendering, and services, similar to Angular.
+  >Inspired by Polymer in part in terms of simplicity and performance, Vue offers a similar development style as HTML, styles, and JavaScript are composed in tandem.
 
 ___
 ### Declarative Rendering
