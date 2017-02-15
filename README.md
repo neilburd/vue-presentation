@@ -37,7 +37,7 @@ To let users interact with your app, we can use the `v-on` directive to attach e
 
 
 ```html
-<div id="app-5">
+<div id="reverse">
   <p>{{ message }}</p>
   <button v-on:click="reverseMessage">Reverse Message</button>
 </div>

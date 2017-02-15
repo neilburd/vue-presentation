@@ -1,0 +1,11 @@
+.codeBlock{
+  padding: 10px;
+  margin-top:20px;
+  border-radius: 10px;
+  width:600px;
+  background-color: beige;
+}
+.codeType{
+  color:red;
+  padding:10px;
+}

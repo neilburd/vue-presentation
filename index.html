@@ -5,14 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Testing Out VueJs</title>
-
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="app">
-      <h2>{{message}}</h2>
-      <input v-model="message">
-      <button v-on:click="reverseMessage">Reverse Message</button>
+      <h2>{{ message }}</h2>
     </div>
+    <div class="codeBlock">
+    <pre><p class="codeType">html</p><code>
+      &lt;div id="app"&gt;
+        {{ message }}
+      &lt;/div&gt;
+    </code></pre>
+  </div>
+  <div class="codeBlock">
+    <pre><p class="codeType">javascript</p><code>
+      var app = new Vue({
+        el: '#app',
+        data: {
+          message: 'Hello World!'
+        }
+      })
+    </code></pre>
+  </div>
+
+<div id="reverseInput">
+  <h2>{{message}}</h2>
+  <input v-model="message">
+  <button v-on:click="reverseMessage">Reverse Message</button>
+</div>
+
+<div class="codeBlock">
+<pre><p class="codeType">html</p><code>
+  &lt;div id="reverseInput"&gt;
+    &lt;h2&gt;{{message}}&lt;/h2&gt;
+    &lt;input v-model="message"&gt;
+    &lt;button v-on:click="reverseMessage">Reverse Message&lt;/button&gt;
+  &lt;/div&gt;
+
+</code></pre>
+</div>
+<div class="codeBlock">
+<pre><p class="codeType">javascript</p><code>
+  var reverseInput = new Vue({
+    el: '#reverseInput',
+    data: {
+      message: 'You loaded this page on'
+    },
+    methods: {
+      reverseMessage: function(){
+        this.message = this.message.split('').reverse().join('')
+      }
+    }
+  })
+</code></pre>
+</div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.js"></script>
   <script src="script.js"></script>

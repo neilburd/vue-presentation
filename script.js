@@ -1,7 +1,16 @@
 var app = new Vue({
   el: '#app',
+  data:{
+    message: 'Hello Wolrd!'
+  }
+})
+
+
+
+var reverseInput = new Vue({
+  el: '#reverseInput',
   data: {
-    message: 'You loaded this page on'
+    message: 'Reverse Message on Click'
   },
   methods: {
     reverseMessage: function(){
