@@ -6,20 +6,19 @@ A lot, depending on your use case.
 ---
 
 
-[Vue](https://vuejs.org/) is a progressive framework for building user interfaces. Think React and Angular had a baby, then Polymer came in to raise it. The core library is focused on the view layer, Like React and is considered a MVVM, [Model View View Model](https://www.codeproject.com/Articles/100175/Model-View-ViewModel-MVVM-Explained), But Vue has two way data-binding like Angular.
+[Vue](https://vuejs.org/) is a progressive framework for building user interfaces. Think React and Angular had a baby, then Polymer came in to raise it. The core library is focused on the view layer, and is considered a MVVM, [Model View View Model](https://www.codeproject.com/Articles/100175/Model-View-ViewModel-MVVM-Explained), similiar to React, but Vue has two way data-binding like Angular.
 
 ___
 ### Declarative Rendering
 >Vue.js uses a system that enables declarative data rendering to the DOM using a template syntax:
 
-the html
-```
+
+```html
 <div id="app">
   {{ message }}
 </div>
 ```
-the javascript
-```
+```javascript
 var app = new Vue({
   el: '#app',
   data: {
@@ -36,15 +35,14 @@ ___
 ### User Interaction
 To let users interact with your app, we can use the `v-on` directive to attach event listeners that invoke methods on our Vue instances.
 
-html
-```
+
+```html
 <div id="app-5">
   <p>{{ message }}</p>
   <button v-on:click="reverseMessage">Reverse Message</button>
 </div>
 ```
-javascript
-```
+```javascript
 var app5 = new Vue({
   el: '#app-5',
   data: {
@@ -64,15 +62,14 @@ Just like th `data:` key in the Vue object, `methods:` is used to store all the 
 
 The `v-model` directive is one way that two way data-binding is possible:
 
-html
-```
+
+```html
 <div id="app-6">
   <p>{{ message }}</p>
   <input v-model="message">
 </div>
 ```
-javascript
-```
+```javascript
 var app6 = new Vue({
   el: '#app-6',
   data: {
@@ -86,8 +83,8 @@ ____
 Like in Angular and React we can create custom Components in Vue. In Vue, a component is essentially a Vue instance with pre-defined options.
 
 We use `prop` to pass data from the parent scope into children components, kind of like React.
-javascript
-```
+
+```javascript
 Vue.component('todo-item', {
   // The todo-item component now accepts a
   // "prop", which is like a custom attribute.
@@ -97,8 +94,7 @@ Vue.component('todo-item', {
 })
 ```
 Now we can pass the todo into each repeated component using `v-bind`.
-html
-```
+```html
 <div id="app-7">
   <ol>
     <!-- Now we provide each todo-item with the todo object    -->
@@ -107,8 +103,7 @@ html
   </ol>
 </div>
 ```
-javascript
-```
+```javascript
 Vue.component('todo-item', {
   props: ['todo'],
   template: '<li>{{ todo.text }}</li>'
